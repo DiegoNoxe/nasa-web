@@ -7,7 +7,7 @@
 
    main{
     margin-top: 10px;
-    background-image: linear-gradient(to bottom, #8400ff, rgb(148 0 255), rgb(109 0 255));
+    background-image: linear-gradient(to bottom, #1f0033, rgb(72 1 123 / 37%), rgb(20 17 53 / 82%));
     background-color: #7e62d7;
     border-radius: 50px;
     border-bottom: 10px;
@@ -16,8 +16,16 @@
     min-width: 300px;
     max-width: 1000px;
     margin: 50px auto;
-    box-shadow: 0px 0px 7px rgb(255, 255, 255); /* Adicione a sombra aqui */
+    box-shadow: 0px 0px 7px rgb(255, 255, 255); 
    }
+
+   @media only screen and (max-width: 600px) {
+    main {
+        border-radius: 0px;
+    }
+}
+
+   
    
    main p {
     padding-top: 16px;
@@ -51,19 +59,21 @@
 
    main a:hover{
     text-decoration: underline;
-    background-color: rgb(121, 104, 98);
+    background-color: rgb(255, 68, 0);
    }
 
    main h2 {
     padding-top: 30px;
-    color:  #ffffff;
+    color:  #ffd900;
+    text-align: center;
    }
 
    main h1 {
     font-weight: bolder;
-    color: #000000;
+    color: #00d9ff;
     text-align: center;
     font-size: 2.2em;
+    text-decoration: underline;
    }
 
    nav {
@@ -96,6 +106,15 @@
 
    }
 
+   footer a {
+    text-decoration: none;
+    transition: 2s;
+   }
+
+   footer a:hover{
+    color: blue;
+   }
+
    .divT{
     margin: auto;
     margin-top: 50px;
@@ -106,7 +125,7 @@
     text-align: center;
     @media only screen and (max-width: 600px) {
         video {
-            width: 80%;
+            width: 100%;
         }
     }
    }
