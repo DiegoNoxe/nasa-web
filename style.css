@@ -99,6 +99,16 @@
     }
 }
 
+@media only screen and (max-width: 500px) {
+    main p {
+       
+        line-height: 1.5em;
+        text-indent: 20px;
+        text-align: justify;
+        color: rgb(255, 255, 255);
+    }
+}
+
    nav a:hover{
     transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
     background-color: rgba(0, 60, 255, 0.534);
